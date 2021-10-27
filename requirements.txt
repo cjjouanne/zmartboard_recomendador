@@ -1,0 +1,17 @@
+flask
+flask_cors
+flask_script
+flask_sqlalchemy
+gensim
+html2text
+nltk
+numpy
+pandas
+pendulum
+psycopg2-binary
+wheel
+sentence-transformers
+spacy
+transformers
+rake-nltk
+gunicorn

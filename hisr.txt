@@ -1,0 +1,632 @@
+    1  passwd zmart
+    2  ls -al /home
+    3  sudo su - zmart
+    4  id
+    5  d
+    6  update && apt-get dist-upgrade -y&& apt-get upgrade && apt autoremove -y
+    7  apt-get update && apt-get dist-upgrade -y&& apt-get upgrade && apt autoremove -y
+    8  apt update
+    9  apt upgrade
+   10  pip3
+   11  apt install -y python3-pip
+   12  ls -al
+   13  pwd
+   14  cd /home/zmart
+   15  ls -al
+   16  sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
+   17  ls -al
+   18  apt install -y python3-venv
+   19  pwd
+   20  mkdir prod
+   21  cd prod
+   22  ls -al
+   23  python3 -m venv 
+   24  python3 -m venv prodenv
+   25  sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+   26  cat /etc/passwd
+   27  sudo apt-get install python3-pip python3-dev nginx
+   28  ls -al
+   29  source prodenv/bin/activate
+   30  ls -al
+   31  vi requirements.txt
+   32  pip3 install setuptools –upgradeons-3.7.4.3
+   33  pip3 install setuptools --upgrade
+   34  pip3 install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+   35  vi requirements.txt 
+   36  pip3 install -r requirements.txt
+   37  pip3 install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+   38  pip3 install -r requirements.txt
+   39  exit
+   40  sudo su - zmart
+   41  id
+   42  pwd
+   43  cd /home/zmart/prod/
+   44  ls -al
+   45  rm -r prodenv/
+   46  python3 -m venv prodenv
+   47  source prodenv/bin/activate
+   48  pip3 install -r requirements.txt
+   49  cat requirements.txt 
+   50  deactivate
+   51  ls -al
+   52  rm -r prodenv
+   53  source prodenv/bin/activate
+   54  python3 -m venv prodenv
+   55  source prodenv/bin/activate
+   56  pip install setuptools==21.2.1
+   57  pip --version
+   58  pip3 install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+   59  deactivate
+   60  ls -al
+   61  rm -r prodenv/
+   62  python3 -m venv prodenv
+   63  source prodenv/bin/activate
+   64  pip install setuptools==21.2.1
+   65  pip3 install -r requirements.txt
+   66  deactivate
+   67  rm -r prodenv/
+   68  python3 -m venv prodenv
+   69  source prodenv/bin/activate
+   70  pip3 install setuptools==21.2.1
+   71  pip3 install -r requirements.txt
+   72  deactivate
+   73  rm -r prodenv/
+   74  python3 -m venv prodenv
+   75  source prodenv/bin/activate
+   76  pip3 install setuptools==21.2.1
+   77  cat requirements.txt 
+   78  pip3 install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+   79  deactivate 
+   80  rm -r prodenv/
+   81  python3 -m venv prodenv
+   82  source prodenv/bin/activate
+   83  pip3 install setuptools==21.2.1
+   84  pip3 install wheel
+   85  python3 setup.py bdist_wheel 
+   86  pip3 install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+   87  pip3 install -r requirements.txt
+   88  deactivate 
+   89  rm -r prodenv/
+   90  source prodenv/bin/activate
+   91  python3 -m venv prodenv
+   92  source prodenv/bin/activate
+   93  pip3 install setuptools==21.2.1
+   94  python3 setup.py bdist_wheel 
+   95  pip3 install wheel
+   96  pip3 install -U nltk
+   97  pip3 install -U numpy
+   98  python3 -m nltk.downloader all
+   99  ls -altr
+  100  df -h
+  101  pip3 install rake-nltk
+  102  pip3 install -r requirements.txt
+  103  pip3 install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+  104  pip3 install -r requirements.txt
+  105  deactivate 
+  106  rm -r prodenv/
+  107  python3 -m venv prodenv
+  108  source prodenv/bin/activate
+  109  pip install setuptools==21.2.1
+  110  "pip3 install wheel
+  111  "
+  112  pip3 install wheel
+  113  pip3 install -U nltk
+  114  pip3 install -U numpy
+  115  python3 -m nltk.downloader all
+  116  pip3 install rake-nltk
+  117  pip3 install torch==1.7.0+cpu torchvision==0.8.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+  118  pip3 install -r requirements.txt
+  119  ls -al
+  120  vi application.py
+  121  vi config.py
+  122  vi init.py
+  123  vi models.py
+  124  vi init.py 
+  125  vi config.py 
+  126  vi application.py 
+  127  ls -al
+  128  mkdir recsys
+  129  ls -all
+  130  ls -al
+  131  cd recsys
+  132  vi recommender_engine.py
+  133  vi recommender_system.py
+  134  mkdir modelo
+  135  mkdir utils
+  136  cd utils
+  137  vi text_processing_tools.py
+  138  ls -altr
+  139  ls -al
+  140  cd ..
+  141  cd -
+  142  vi text_processing_tools.py
+  143  pwd
+  144  cd ..
+  145  vi run-nohup.sh
+  146  ls -al
+  147  vi run-nohup.sh 
+  148  vi run-sysrec.sh
+  149  ./run-sysrec.sh
+  150  chmod +x run-sysrec.sh
+  151  ./run-sysrec.sh
+  152  cd recsys/
+  153  cd utils/
+  154  vi MLStripper.py
+  155  cd ..
+  156  history 
+  157  ./run-sysrec.sh
+  158  cat app.py
+  159  ./run-sysrec.sh
+  160  vi application.py 
+  161  ./run-sysrec.sh
+  162  vi run-sysrec.sh
+  163  ls -al
+  164  gunicorn --bind 0.0.0.0:5000 wsgi:app
+  165  vi wsgi.py
+  166  gunicorn --bind 0.0.0.0:5000 wsgi:app
+  167  ls -altr
+  168  rm __pycache__/
+  169  r m-r  __pycache__/
+  170  rm -r  __pycache__/
+  171  ls -al
+  172  gunicorn --bind 0.0.0.0:5000 wsgi:app
+  173  vi run-gunicorn.sh
+  174  ./run-gunicorn.sh
+  175  chmod +x run-gunicorn.sh
+  176  ls -altr
+  177  ./run-gunicorn.sh
+  178  vi run-gunicorn.sh
+  179  ./run-gunicorn.sh
+  180  exit
+  181  cd /etc/nginx/sites-available/
+  182  ls -al
+  183  mv default /home/zmart/.
+  184  vi sysrec
+  185  vi /etc/hosts
+  186  vi sysrec
+  187  systemctl restart nginx
+  188  journalctl -xe
+  189  journalctl -xe >x
+  190  vi x
+  191  ls -al
+  192  rm x
+  193  cp /home/zmart/default .
+  194  vi default 
+  195  systemctl restart nginx
+  196  telnet localhost 80
+  197  netstat -nlt
+  198  apt install net-tools
+  199  netstat -nlt
+  200  netstat -nlt |GREP 80
+  201  netstat -nlt |grep 80
+  202  less /var/log/nginx/error.log
+  203  cat /var/log/nginx/error.log
+  204  date
+  205  cat /var/log/nginx/access.log
+  206  journalctl -u nginx
+  207  journalctl -u sysrec
+  208  cat /var/log/nginx/error.log
+  209  cat /var/log/nginx/access.log
+  210  journalctl -u nginx
+  211  ls -al /var/log
+  212  ls .al
+  213  df -h
+  214  ls -al
+  215  vi sysrec 
+  216  cat sysrec 
+  217  ls -al /home/zmart/prod/sysrec.sock
+  218  systemctl status nginx
+  219  systemctl stop nginx
+  220  systemctl status nginx
+  221  systemctl start nginx
+  222  cat /var/log/nginx/access.log
+  223  date
+  224  date --set "2020-11-25 02:15"
+  225  date
+  226  s
+  227  ls -al
+  228  vi default 
+  229  systemctl restart nginx
+  230  mv sysrec /home/zmart/.
+  231  vi default 
+  232  ls -al
+  233  mv /home/zmart/sysrec sysrec
+  234  ls -al
+  235  ln -s /etc/nginx/sites-available/sysrec /etc/nginx/sites-enabled
+  236  systemctl status nginx
+  237  cat /var/log/nginx/access.log
+  238  cat /var/log/nginx/error.log
+  239  pwd
+  240  cd ..
+  241  cd sites-enabled/
+  242  ls -al
+  243  cat default 
+  244  vi default 
+  245  pwd
+  246  cd -
+  247  cd sites-available/
+  248  ls -al
+  249  vi default 
+  250  systemctl restart nginx
+  251  journalctl -xe
+  252  vi default 
+  253  systemctl restart nginx
+  254  journalctl -xe
+  255  vi default 
+  256  journalctl -xe
+  257  vi sysrec 
+  258  systemctl start nginx
+  259  journalctl -xe
+  260  journalctl -xe >x
+  261  vi x
+  262  rm x
+  263  ls -al
+  264  vi sysrec 
+  265  systemctl start nginx
+  266  journalctl -xe >x
+  267  journalctl -xe >
+  268  journalctl -xe 
+  269  vi sysrec 
+  270  systemctl start nginx
+  271  journalctl -xe 
+  272  vi sysrec 
+  273  systemctl start nginx
+  274  cd /home/zmart/
+  275  ls -al
+  276  cd prod
+  277  vi run-gunicorn-nohup.cl
+  278  source prodenv/bin/activate
+  279  cat run-gunicorn-nohup.cl
+  280  ls -al
+  281  ls -al 
+  282  mv run-gunicorn-nohup.cl run-gunicorn-nohup.sh
+  283  chmod +x run-gunicorn-nohup.sh
+  284  ./run-gunicorn-nohup.sh
+  285  ls -al
+  286  ps -fea |grep sock
+  287  cat run-gunicorn-nohup.sh 
+  288  cat loguni.log 
+  289  ls -altr
+  290  cat loguni.log 
+  291  ps -fea |grep sock
+  292  ls .altr
+  293  ls -altr
+  294  cat loguni.log 
+  295  ps -fea |grep sock
+  296  ls -al
+  297  cd /etc/nginx/sites-available/
+  298  rm x
+  299  ls -al
+  300  cat sysrec 
+  301  exit
+  302  cd /home/zmart/
+  303  ls -al
+  304  cd prod
+  305  ls -al
+  306  vi application.py 
+  307  cat loguni.log 
+  308  pwd
+  309  cd /etc/nginx/sites-available/
+  310  ls -al
+  311  vi sysrec 
+  312  vi /etc/hosts
+  313  systemctl start nginx
+  314  systemctl restart nginx
+  315  systemctl stop nginx
+  316  systemctl start nginx
+  317  journalctl -xe
+  318  vi sysrec 
+  319  systemctl restart nginx
+  320  cat sysrec 
+  321  w
+  322  s
+  323  w
+  324  pwd
+  325  ls -al
+  326  mv default /home/zmart/.
+  327  systemctl restart nginx
+  328  journalctl -xe
+  329  ls -al
+  330  mv /home/zmart/default .
+  331  ls -al
+  332  mv default /home/zmart/.
+  333  cp sysrec /home/zmart/.
+  334  mv sysrec default
+  335  systemctl restart nginx
+  336  journalctl -xe
+  337  cp /home/zmart/sysrec .
+  338  cp /home/zmart/default .
+  339  systemctl restart nginx
+  340  cat /home/zmart/prod/loguni.log 
+  341  cd /home/zmart/prod/
+  342  ls -al
+  343  ls -altr
+  344  cat loguni.log 
+  345  date
+  346  cat /var/log/nginx/access.log 
+  347  cat /var/log/nginx/error.log 
+  348  ls -al
+  349  ps -fea |grep sock
+  350  cat run-gunicorn-nohup.sh 
+  351  ls -al
+  352  ls -alt
+  353  ls -altr
+  354  date
+  355  vi application.py 
+  356  cd /usr/share/zoneinfo
+  357  ls -al
+  358  tzselect
+  359  echo $TZ
+  360  date
+  361  dpkg-reconfigure tzdata 
+  362  date
+  363  cd -
+  364  cat recsys/
+  365  ls -altr
+  366  cat loguni.log 
+  367  vi application.py 
+  368  cd /home/zmart/
+  369  ls-al
+  370  ls -al
+  371  cd prod
+  372  ls -al
+  373  cat loguni.log 
+  374  pwd
+  375  ls -al
+  376  history 
+  377  history |grep run
+  378  history 
+  379  cd /home/zmart/prod/
+  380  ls -al
+  381  cat run-gunicorn-nohup.sh 
+  382  ls -alR *.py
+  383  ls -al
+  384  ls -alr *.py
+  385  ls -alr ../*.py
+  386  ls -alr ../prod/*.py
+  387  ls -al
+  388  ls -alR
+  389  ls -alR *.py
+  390  ls -alR
+  391  ls -alR |grep *.py
+  392  ls -alR |grep .py
+  393  sudo su - zmart
+  394  ls -altr
+  395  cat run-gunicorn.sh 
+  396  ls -altr
+  397  cat run-gunicorn.sh 
+  398  cat run-gunicorn-nohup.sh 
+  399  ls -atr
+  400  ls -altr
+  401  vi run-gunicorn
+  402  vi run-gunicorn-nohup.sh 
+  403  ./run-gunicorn-nohup.sh 
+  404  ps -fea |grep sock
+  405  ls -altr
+  406  cat loguni.log 
+  407  ps -fea |grep sock
+  408  cd /home/zmart/prod
+  409  ps -fea |grep sock
+  410  history 
+  411  ps -fea |grep sock
+  412  ls -al sysrec.sock 
+  413  ls -al recsys/
+  414  vi recsys/recommender_system.py 
+  415  ps -fea |grep sock
+  416  kill -9 60844
+  417  kill -9 60846
+  418  ps -fea |grep sock
+  419  ls -al
+  420  ./run-gunicorn-nohup.sh 
+  421  ps -fea |grep sock
+  422  exit
+  423  cd /home/zmart/prod/recsys/
+  424  ls -a
+  425  vi recommender_system.py
+  426  ps -fea |grep sock
+  427  kill -9 64330
+  428  kill -9 6433
+  429  kill -9 64332
+  430  cd ..
+  431  cat run-gunicorn-nohup.sh 
+  432  source prodenv/bin/activate
+  433  gunicorn --workers 1 --bind unix:sysrec.sock  wsgi:application --timeout 900 
+  434  cp run-
+  435  cp run-gunicorn.sh run.sh
+  436  vi run.sh 
+  437  cp run-gunicorn-nohup.sh run.sh
+  438  vi run.sh 
+  439  ./run.sh 
+  440  ps -fea |grep sock
+  441  kill -9 62168
+  442  kill -9 62170
+  443  ls -al
+  444  cd /home/zmart/prod
+  445  vi application.p
+  446  vi application.py
+  447  ./run-gunicorn-nohup.sh 
+  448  ps -fea |grep sock
+  449  ls -altr
+  450  cat loguni.log 
+  451  journalctl -u nginx
+  452  q  q q 
+  453  ls -al
+  454  cat run-gunicorn.sh 
+  455  vi run-gunicorn.sh 
+  456  cat run-gunicorn-nohup.sh 
+  457  vi run-gunicorn.sh 
+  458  w
+  459  ls -altr
+  460  cat loguni.log 
+  461  w
+  462  cd recsys/
+  463  ls -altr
+  464  cd /home/zmart/prod/recsys/
+  465  ls -al
+  466  cp recommender_system.py recommender_system.py.bak
+  467  vi recommender_system.py
+  468  pwd
+  469  ps -fea |grep sock
+  470  kill -9 62820
+  471  kill -9 62822
+  472  ./run-gunicorn-nohup.sh 
+  473  cd ..}
+  474  cd ..
+  475  ./run-gunicorn-nohup.sh 
+  476  ps -fea |grep sock
+  477  tail -f loguni.log 
+  478  vi run-gunicorn-nohup.sh 
+  479  tail -f loguni.log 
+  480  cd recsys/
+  481  ls -al
+  482  vi recommender_system.py
+  483  history |grep ng
+  484  id
+  485  systemctl restart nginx
+  486  cd /etc/nginx/sites-enabled/
+  487  ls -al
+  488  ls cd ../ava
+  489  ls cd ../sites-available/
+  490  ls -al
+  491  ls cd ../sites-available/
+  492  ls -al
+  493  vi sysrec 
+  494  systemctl stop nginx
+  495  systemctl start nginx
+  496  ps -fea  |grep sock
+  497  cd /home/zmart/prod
+  498  cd recsys/
+  499  vi recommender_system.py
+  500  cd ..
+  501  vi application.py 
+  502  ./run-gunicorn-nohup.sh 
+  503  ls -altr
+  504  tail -f loguni.log 
+  505  vi application.py 
+  506  tail -f loguni.log 
+  507  cat loguni.log 
+  508  ps -fea |grep sock
+  509  kill -9 63269
+  510  kill -9 63271
+  511  kill -9 63712
+  512  kill -9 63714
+  513  ls -al
+  514  cat loguni.log 
+  515  cat run-gunicorn.sh 
+  516  ./run-gunicorn.sh 
+  517  ./run-gunicorn-nohup.sh 
+  518  ps -fea |grep sock
+  519  cat run-gunicorn-nohup.sh 
+  520  cat run-gunicorn.sh 
+  521  cat loguni.log 
+  522  ps -fea |grep sock
+  523  kill -9 64023
+  524  kill -9 64025
+  525  cat run-gunicorn.sh 
+  526  cat run-gunicorn-nohup.sh 
+  527  ./run-gunicorn.sh
+  528  ./run-gunicorn.sh 
+  529  vi  run-gunicorn.sh 
+  530  ./run-gunicorn.sh 
+  531  vi run-gunicorn.sh
+  532  ./run-gunicorn.sh 
+  533  ./run-gunicorn-nohup.sh 
+  534  cat loguni.log 
+  535  ls -altr
+  536  cd /home/zmart/prod/recsys
+  537  ls -al
+  538  cd /home/zmart/prod
+  539  cat log
+  540  cat loguni.log 
+  541  cd /prod/zmart/prod
+  542  cd /home/zmart/prod
+  543  ls -altr
+  544  ls -altr recsys/
+  545  ps -fea |grep sock
+  546  cat loguni.log 
+  547  w
+  548  ps -fea|grep sock
+  549  vi application.py   
+  550  ls -al sysrec.sock 
+  551  ls -al sysrec.s
+  552  kill -9 65220 65222
+  553  kill 73852
+  554  ./run-gunicorn-nohup.sh 
+  555  cd /home/smart/prod
+  556  cd /home/zmart/prod/rod
+  557  cd /home/zmart/prod/
+  558  ./run-gunicorn-nohup.sh 
+  559  cat loguni.log 
+  560  history 
+  561  cd /home/zmart/
+  562  ls -al
+  563  cd prod
+  564  ls -al
+  565  ls -al recsys
+  566  ls -al recsys/modelo/
+  567  ls -al recsys/utils
+  568  ls -al
+  569  crontab -l
+  570  history 
+  571  cd /home/zmart/prod/
+  572  ls -al
+  573  cat run.sh 
+  574  ps -fea
+  575  ls -altr /var/log/
+  576  ls -altr /var/log/nginx/
+  577  cat -altr /var/log/nginx/access.log
+  578  cat /var/log/nginx/access.log
+  579  cat /var/log/nginx/error.log
+  580  ls -altr /var/log/nginx/
+  581  cat /var/log/nginx/error.log.1
+  582  ls -al
+  583  cd recsys/
+  584  ls -al
+  585  vi recommender_system.py
+  586  vi recommender_engine.py 
+  587  vi recommender_system.py
+  588  ps -fea
+  589  ps -fea|grep zmart
+  590  history 
+  591  c d..
+  592  cd ..
+  593  ls -altr
+  594  cat loguni.log 
+  595  ls -altr
+  596  cat run-gunicorn-nohup.sh 
+  597  cat run-gunicorn.sh 
+  598  cat run.sh 
+  599  ls -al
+  600  ls -altr
+  601  vi user_lessons.csv 
+  602  ls -al prodenv/
+  603  cat run-gunicorn-nohup.sh 
+  604  ps -fea |grep application
+  605  cat run-gunicorn.sh 
+  606  cat run.sh 
+  607  ls -al
+  608  ls -altr /varl/log
+  609  ls -altr /var/log
+  610  cat /var/log/auth.log
+  611  ls -altr /var/log
+  612  date
+  613  ls -altr /var/log/syslog
+  614  cat /var/log/syslog
+  615  date
+  616  ls -altr /var/log
+  617  cat /var/log/nginx/ac
+  618  grep list_less *.py
+  619  vi application.py 
+  620  ls -altr
+  621  cd ..
+  622  ls -al
+  623  vi sysrec 
+  624  tar cvf zmart_prod.tar prod
+  625  df -h
+  626  pwd
+  627  ls -al
+  628  ftp sysrec.ing.puc.cl
+  629  pwd
+  630  cd /home/zmart/prod
+  631  ls -altr
+  632  history >hisr.txt
