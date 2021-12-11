@@ -1,7 +1,7 @@
 from flask import request, jsonify, abort, redirect, url_for
 import json
 from init import application
-from models import Lesson, User, Lesson_User_Vote, Tag, Config, Lesson_User_Rating
+from models import Lesson, User, Lesson_User_Vote, Tag, Config, Lesson_User_Rating, User_Query
 import recsys.recommender_engine as rs
 import recsys.recommender_system as ry
 import pandas as pd
@@ -221,6 +221,8 @@ def search_lessons():
         only_published=published=="true",
     )
     result = []
+    id_list = []
+    id_counter = 0
     for lesson in lessons.items:
         result.append({
             "id": str(lesson.id),
@@ -238,6 +240,11 @@ def search_lessons():
             "user_publisher": lesson.user_publisher,
             "user_publisher_email": lesson.user_publisher_email
         })
+        if id_counter<=10:
+            id_list.append(lesson.id)
+        id_counter += 1
+    json_query = {'querytext': search, 'id_list': str(id_list)}
+    User_Query.create(**json_query)
     return json.dumps({
         "pages": int(lessons.pages),
         "lessons": result
@@ -270,6 +277,8 @@ def all_lessons():
         only_published=published=="true",
     )
     result = []
+    id_list = []
+    id_counter = 0
     for lesson in lessons.items:
         result.append({
             "id": str(lesson.id),
@@ -287,6 +296,11 @@ def all_lessons():
             "user_publisher": lesson.user_publisher,
             "user_publisher_email": lesson.user_publisher_email
         })
+        if id_counter<=10:
+            id_list.append(lesson.id)
+        id_counter += 1
+    json_query = {'querytext': search, 'id_list': str(id_list)}
+    User_Query.create(**json_query)
     return json.dumps({
         "pages": int(lessons.pages),
         "lessons": result
@@ -498,10 +512,17 @@ def recommend():
       logging.info(f"Recommended list: {recommended_list}")
       #print("Recomendaciones para ", recommended_list, "':\n")
       lista=[]
+      id_list = []
+      id_counter = 0
       for rec in recommended_list:
          # st = str(rec["id"])
           st = str(rec["id"])
           lista = lista+[st]
+          if id_counter<=10:
+            id_list.append(rec["id"])
+          id_counter += 1
+      json_query = {'querytext': query, 'id_list': str(id_list)}
+      User_Query.create(**json_query)
       return (print_recos(lista))
     except Exception as e:
       return(str(e))

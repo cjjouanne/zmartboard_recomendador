@@ -211,6 +211,11 @@ class Lesson(db.Model):
                 objs = cls.query.filter(Lesson.user_publisher_email.ilike(f'%{search}%')).order_by(order).paginate(page, per_page, error_out=True)
             elif filter_by == 'tags':
                 objs = cls.query.filter(func.strpos(cast(Lesson.tags, db.String), search) >= 1).order_by(order).paginate(page, per_page, error_out=True)
+            elif filter_by == 'date':
+                search_list = search.split("--")
+                fromDate = datetime.datetime.strptime(search_list[0], '%Y-%m-%d')
+                toDate = datetime.datetime.strptime(search_list[1], '%Y-%m-%d')
+                objs = cls.query.filter(Lesson.created_at.between(fromDate, toDate)).order_by(order).paginate(page, per_page, error_out=True)
             else:
                 objs = cls.query.order_by(order).paginate(page, per_page, error_out=True)
         else:
@@ -494,3 +499,29 @@ class Lesson_User_Rating(db.Model):
         else:
             return obj_read
 
+class User_Query(db.Model):
+
+    __tablename__ = 'user_query'
+    id = db.Column(db.Integer, primary_key=True, nullable=False)
+    querytext = db.Column(db.String(250))
+    id_list = db.Column(db.String(250))
+    created = db.Column(db.DateTime)
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.created = datetime.datetime.now()
+
+    @property
+    def json(self):
+        return json.dumps({
+            "id": str(self.id),
+            "querytext": self.querytext,
+            "id_list" : self.id_list
+        })
+
+    @classmethod
+    def create(cls, **kwargs):
+        obj = cls(**kwargs)
+        db.session.add(obj)
+        db.session.commit()
+        return obj
